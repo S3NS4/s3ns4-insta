@@ -90,10 +90,8 @@ export default function Post({ id, username, userImg, img, caption }) {
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="h-5" />
       </div>
-
       {/*Img*/}
       <img src={img} className="w-full object-cover" alt="" />
-
       {/*Buttons*/}
       {session && (
         <div className="flex justify-between px-4 pt-4">
@@ -112,8 +110,7 @@ export default function Post({ id, username, userImg, img, caption }) {
           <BookmarkIcon className="btn" />
         </div>
       )}
-
-      {/*Caption*/}
+      {/*Caption*/} {/**/}
       <p className="truncate p-5">
         {likes.length > 0 && (
           <p className="mb-1 font-bold">
@@ -123,7 +120,6 @@ export default function Post({ id, username, userImg, img, caption }) {
         <span className="mr-1 font-bold">{username}</span>
         {caption}
       </p>
-
       {/*Comments*/}
       {comments.length > 0 && (
         <div
@@ -150,7 +146,6 @@ export default function Post({ id, username, userImg, img, caption }) {
           ))}
         </div>
       )}
-
       {/*Input box*/}
       {session && (
         <form className="flex items-center p-4">
