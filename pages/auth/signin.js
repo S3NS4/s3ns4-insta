@@ -6,14 +6,14 @@ export default function signIn({ providers }) {
     <>
       <Header />
 
-      <div className="-mt-56 flex min-h-screen flex-col items-center justify-center py-2 px-14 text-center">
+      <div className="fixed -mt-20 flex h-full w-full flex-col items-center justify-center py-2 px-14 text-center">
         <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
         <p className="font-xs italic">
           This is not a REAL app. It is built for Miguel Almeida's portfolio
           only.
         </p>
 
-        <div className="mt-40">
+        <div className="mt-20">
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
               <button
