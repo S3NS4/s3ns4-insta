@@ -110,7 +110,7 @@ export default function Post({ id, username, userImg, img, caption }) {
           <BookmarkIcon className="btn" />
         </div>
       )}
-      {/*Caption*/} {/**/}
+      {/*Caption*/}
       <p className="truncate p-5">
         {likes.length > 0 && (
           <p className="mb-1 font-bold">
