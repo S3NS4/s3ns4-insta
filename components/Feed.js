@@ -13,7 +13,7 @@ export default function Feed() {
         !session && '!max-w-3xl !grid-cols-1'
       }`}
     >
-      <section>
+      <section className="col-span-2">
         <Stories />
         <Posts />
       </section>
